@@ -20,10 +20,11 @@ RUN apt-get update            && \
     cp /workspace/bin/*          \
        /usr/local/bin/        && \
     rm -rf workspace          && \
-    apt-get purge             && \
+    apt-get purge -y             \
             build-essential      \
 	    libreadline-dev      \
-	    libwxgtk2.8-dev   && \
+	    libwxgtk3.0-dev   && \
+    apt-get autoremove -y     && \
     rm -rf                       \
        /var/lib/apt/lists/*
 
