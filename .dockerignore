@@ -1,0 +1,25 @@
+# don't trigger cache misses on meta files
+.gitignore
+Dockerfile*
+README.md
+LICENSE
+.dockerignore
+
+# to avoid copying any local context
+.git
+bin/*
+obj/*
+
+# .gitignore stuff
+*.bin
+obj
+*.exe
+*~
+bossa
+bossac
+bin
+*.swp
+tags
+*.bak
+install/*.crt
+install/*.p12
